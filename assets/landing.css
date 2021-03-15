@@ -80,7 +80,7 @@ section .content a {
   bottom: 20px;
   color: #fff;
   font-size: 1.1em;
-  margin: 20px 0 10px;
+  margin: 20px 0 0;
 }
 
 /* TOMBOL TOGGLE NAVBAR */
@@ -197,7 +197,7 @@ section .content a {
 @media (max-width: 767px)
 {
   section.jumbotron{
-    padding: 100px 40px;
+    padding: 100px 40px 0;
   }
   section .content h2{
     font-size: 2.5em;
@@ -224,6 +224,9 @@ section .content a {
   }
   .logo.sticky{
     padding: 14px 20px;
+  }
+  .copyright{
+    bottom: 0;
   }
   .aboutMe {
     width: 100%;
