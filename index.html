@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Maju Mundur Inc</title>
+    <link rel="stylesheet" href="assets/landing.css">
+</head>
+<body>
+    <!-- Content Utama -->
+    <section class="jumbotron">
+        <div class="logo">Maju Mundur Inc</div>
+        <img src="assets/bg1.jpg" class="bg">
+        <div class="content">
+            <h2>Membangun Teknologi<br>Dalam Mewujudkan Mimpi</h2>
+            <p>PT MAJU MUNDUR Inc adalah Perusahaan yang bergerak di bidang teknologi terbaru, kami terus berinovasi seiring perkembangan jaman dan terus berkarya untuk memberikan manfaat bagi bangsa indonesia</p>
+            <a href="#">Let's Go</a>
+        </div>
+        <p class="copyright">©2021. PT MAJU MUNDUR INC</p>
+    </section>
+    <!-- Navigasi bar -->
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Pekerjaan</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Kontak Kami</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="#"><img src="assets/facebook.png"></a></li>
+                <li><a href="#"><img src="assets/twitter.png"></a></li>
+                <li><a href="#"><img src="assets/instagram.png"></a></li>
+            </ul>
+            <a href="#" class="emailBx"><img src="assets/email.png"></a>
+        </div>
+    </div>
+    <section class="about">
+        <div class="aboutMe">
+            <h2>Tentang Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus exercitationem ad nulla expedita officiis quis, dignissimos quo. Mollitia quisquam ipsam sequi eius expedita. Odit ullam accusamus cum molestias magni?</p>
+        </div>
+        <div class="aboutContent">
+            <div class="aboutBx">
+                <img src="assets/analis.png" alt="">
+                <h2>System Analist</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem natus, ab cumque ipsa facere repellendus a dolore eveniet quia quibusdam.</p>
+            </div>
+            <div class="aboutBx">
+                <img src="assets/software.png" alt="">
+                <h2>Software Engginer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem natus, ab cumque ipsa facere repellendus a dolore eveniet quia quibusdam.</p>
+            </div>
+            <div class="aboutBx">
+                <img src="assets/ui.png" alt="">
+                <h2>UI/UX Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem natus, ab cumque ipsa facere repellendus a dolore eveniet quia quibusdam.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', 
+        function(){
+            var logo = document.querySelector('.logo');
+            logo.classList.toggle('sticky', window.scrollY >0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
