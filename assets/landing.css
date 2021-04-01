@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body .jumbotron{
+body .jumbotron {
   background: #333f4b;
 }
 
@@ -34,7 +34,7 @@ section.jumbotron {
   cursor: pointer;
   transition: 0.5s;
 }
-.logo.sticky{
+.logo.sticky {
   background: #333f4b;
   padding: 6px 100px;
   top: 0;
@@ -97,7 +97,7 @@ section .content a {
   cursor: pointer;
   z-index: 1000;
 }
-.menuToggle.active{
+.menuToggle.active {
   background: #f60f20 url(close.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -118,7 +118,7 @@ section .content a {
   align-items: center;
   transition: 0.2s;
 }
-.navigation.active{
+.navigation.active {
   left: 0px;
 }
 .navigation ul {
@@ -135,7 +135,7 @@ section .content a {
 .navigation ul li a:hover {
   color: #f60f20;
 }
-.socialBar{
+.socialBar {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,44 +146,47 @@ section .content a {
   justify-content: center;
   align-items: center;
 }
-.socialBar ul{
+.socialBar ul {
   position: relative;
 }
-.socialBar ul li{
+.socialBar ul li {
   position: relative;
   list-style: none;
 }
-.socialBar ul li a{
+.socialBar ul li a {
   position: relative;
   display: inline-block;
   transform: scale(0.6);
 }
-.socialBar .emailBx{
+.socialBar .emailBx {
   position: absolute;
   bottom: 20px;
   transform: scale(0.6);
 }
 
 /* ABOUT */
-.aboutMe{
+.about {
+  margin-bottom: 60px;
+}
+.aboutMe {
   width: 100%;
   padding: 5px 100px;
   margin-top: 70px;
   margin-bottom: 30px;
 }
-.aboutMe h2{
+.aboutMe h2 {
   font-weight: 700;
   font-size: 25px;
   margin-bottom: 20px;
 }
 
 /* konten about */
-.about .aboutContent{
+.about .aboutContent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.about .aboutContent .aboutBx{
+.about .aboutContent .aboutBx {
   padding: 40px 20px;
   background: #2196f3;
   color: #fff;
@@ -192,20 +195,160 @@ section .content a {
   text-align: center;
 }
 
+/* HUBUNGI KAMI */
+.hubungi {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+}
+.hubungi .headingBx {
+  max-width: 800px;
+  text-align: center;
+}
+.hubungi .headingBx h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hubungi .headingBx p {
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.containerKontak {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.containerKontak .infoKontak {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.containerKontak .infoKontak .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.containerKontak .infoKontak .box .icon {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.containerKontak .infoKontak .box .textInfo {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.containerKontak .infoKontak .box h3 {
+  font-weight: 700;
+  color: #333f4b;
+}
+.formKontak {
+  width: 60%;
+  padding: 20px;
+  background: #fff;
+}
+.formKontak h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.formKontak .inputBx {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.formKontak .inputBx input,
+.formKontak .inputBx textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.formKontak .inputBx span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.formKontak .inputBx input:focus ~ span,
+.formKontak .inputBx input:valid ~ span,
+.formKontak .inputBx input:focus ~ span,
+.formKontak .inputBx input:valid ~ span,
+.formKontak .inputBx textarea:focus ~ span,
+.formKontak .inputBx textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.formKontak .inputBx input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
 
 /* Responsive */
-@media (max-width: 767px)
-{
-  section.jumbotron{
+@media (max-width: 1000px) {
+  .hubungi {
+    padding: 80px;
+  }
+  .containerKontak {
+    flex-direction: column;
+  }
+  .containerKontak .formKontak {
+    width: 70%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+}
+
+.footer .footerBx {
+  padding: 15px;
+  text-align: center;
+  color: wheat;
+  background: rgb(0, 0, 17);
+}
+
+@media (max-width: 767px) {
+  section.jumbotron {
     padding: 100px 40px 0;
   }
-  section .content h2{
+  section .content h2 {
     font-size: 2.5em;
   }
-  .navigation{
+  .navigation {
     left: 100%;
   }
-  section .bg{
+  section .bg {
     position: absolute;
     top: 0;
     right: 0;
@@ -214,19 +357,22 @@ section .content a {
     object-fit: cover;
     opacity: 0.4;
   }
-  .logo{
+  .logo {
     padding: 6px 40px;
     top: 10px;
     font-size: 1.5em;
   }
-  .navigation ul li a{
+  .navigation ul li a {
     font-size: 2em;
   }
-  .logo.sticky{
-    padding: 14px 20px;
+  .logo.sticky {
+    padding: 17px 20px;
   }
-  .copyright{
+  .copyright {
     bottom: 0;
+  }
+  .about {
+    margin-bottom: 0px;
   }
   .aboutMe {
     width: 100%;
@@ -234,7 +380,13 @@ section .content a {
     margin-top: 0px;
     margin-bottom: 10px;
   }
-  section.about{
+  section.about {
     padding: 70px 30px;
+  }
+  .containerKontak .infoKontak {
+    width: 90%;
+  }
+  .containerKontak .formKontak {
+    width: 90%;
   }
 }
